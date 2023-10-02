@@ -1,0 +1,170 @@
+.delete_Msg{
+    padding-bottom: max(1vw, 1em);
+    form{
+        input[type=submit]{
+            background: #CA5252;
+        }
+    }
+
+}
+
+.rplaySection{
+    display: none;
+    box-sizing: border-box;
+    padding: max(1vw, 1em);
+    width: max(20vw, 20em);
+    box-shadow: 0 max(-0.4vw, -0.4em) max(1vw, 1em) max(-0.7vw, -0.7em) #000;
+    border-radius: max(1vw, 1em);
+    h1{
+        font-size: max(1.2vw, 1.2em);
+    }
+    p{
+        font-size: max(1vw, 1em);
+        font-weight: bold;
+        span{
+            font-weight: 500;
+            color: #7A7181;
+        }
+    }
+    .content{
+        margin: max(1vw, 1em) 0;
+        padding: max(1vw, 1em);
+        background: #492967;
+        border-radius: max(0.5vw, 0.5em);
+        p{
+            font-size: max(0.8vw, 0.8em);
+            font-weight: 500;
+        }
+    }
+    form{
+        p{
+            font-weight: 500;
+        }
+        .fileImprorter{
+            padding: max(1vw, 1em) 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sendBox{
+            display: flex;
+            flex-direction: row-reverse;
+            input[type=submit]{
+                &:hover{
+                    background: #FFF;
+                    color: #25c97d;
+                }
+                transition: 0.3s;
+                padding: max(0.5vw, 0.5em);
+                background: #25c97d;
+                color: #fff;
+                border-radius: max(0.2vw, 0.2em);
+                font-size: max(1vw, 1em);
+                cursor: pointer;
+            }
+        }
+        input{
+            outline: none;
+            border: none;
+        }
+        input[type=text]{
+            padding: max(0.5vw, 0.5em);
+            font-size: max(1vw, 1em);
+            border-radius: max(0.5vw, 0.5em);
+            margin-bottom: max(1vw, 1em);
+        }
+        textarea{
+            outline: none;
+            border: none;
+            border-radius: max(0.5vw, 0.5em);
+            resize: none;
+            font-size: max(0.8vw, 0.8em);
+            width: 100%;
+            height: max(10vw, 10em);
+            padding: max(0.5vw, 0.5em);
+        }
+    }
+}
+
+.allMsges{
+    display: flex;
+    gap: max(1vw, 1em);
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 90vh;
+    align-items: flex-start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: max(0.5vw, 0.5em);
+    box-sizing: border-box;
+}
+
+.singleMsg{
+    box-sizing: border-box;
+    padding: max(1vw, 1em);
+    position: relative;
+    width: max(20vw, 20em);
+    box-shadow: 0 max(-0.4vw, -0.4em) max(1vw, 1em) max(-0.7vw, -0.7em) #000;
+    border-radius: max(1vw, 1em);
+    h1{
+        font-size: max(1.2vw, 1.2em);
+    }
+    .info{
+        font-weight: bold;
+        font-size: max(1vw, 1em);
+        .dateTime{
+            display: flex;
+            flex-direction: column;
+           align-items: flex-end;
+           padding: max(0.5vw, 0.5em);
+            position: absolute;
+            top: 0;
+            right: 0;
+            .date, .time{
+                font-size: max(0.9vw, 0.9em);
+                font-weight: 500;
+            }
+        }
+        span{
+            color: #7A7181;
+            font-weight: 500;
+        }
+    }
+    .content{
+        margin-top: max(1vw, 1em);
+        padding: max(1vw, 1em);
+        background: #492967;
+        border-radius: max(0.5vw, 0.5em);
+        p{
+            font-size: max(0.8vw, 0.8em);
+            font-weight: 500;
+        }
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: max(0.7vw, 0.7em);
+        padding-top: max(1vw, 1em);
+        
+        button{
+            &:hover{
+                background: #fff;
+                color: #000;
+            }
+            transition: 0.3s;
+            border-radius: max(0.2vw, 0.2em);
+            outline: none;
+            border: none;
+            font-size: max(1vw, 1em);
+            color: #FFF;
+            padding: max(0.5vw, 0.5em) max(0.2vw, 0.2em);
+            cursor: pointer;
+        }
+        ._1{
+            background: #25c97d;
+        }
+        ._2{
+            background: #CA5252;
+        }
+    }
+}

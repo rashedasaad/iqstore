@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222831;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body::-webkit-scrollbar {
+  width: 0.2rem;
+  height: 0.4rem;
+}
+body::-webkit-scrollbar-track {
+  background: transparent;
+  cursor: pointer;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3411764706);
+  border-radius: 1%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.1843137255);
+}
+
+::-moz-selection {
+  color: white;
+  background-color: rgba(137, 43, 225, 0.3647058824);
+}
+
+::selection {
+  color: white;
+  background-color: rgba(137, 43, 225, 0.3647058824);
+}
+
+#payment-form {
+  background-color: azure;
+  padding: max(1vw, 1em);
+  border-radius: 7px;
+}
+#payment-form .allInput {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-around;
+}
+#payment-form .allInput input {
+  width: 453px;
+  height: 41px;
+  background: rgb(255, 255, 255);
+  border-radius: max(0.3vw, 0.3em);
+  border: 0.1px solid rgba(119, 119, 119, 0.4666666667);
+  padding-left: 6px;
+  transition: 0.3s;
+  color: rgb(0, 0, 0);
+}
+@media (max-width: 542px) {
+  #payment-form .allInput input {
+    width: 85vw;
+  }
+}
+#payment-form .allInput input::-moz-placeholder {
+  font-weight: 500;
+  color: #777;
+  padding-left: max(0.4vw, 0.4em);
+  font-size: max(0.7vw, 0.7em);
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+#payment-form .allInput input:-ms-input-placeholder {
+  font-weight: 500;
+  color: #777;
+  padding-left: max(0.4vw, 0.4em);
+  font-size: max(0.7vw, 0.7em);
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+#payment-form .allInput input::placeholder {
+  font-weight: 500;
+  color: #777;
+  padding-left: max(0.4vw, 0.4em);
+  font-size: max(0.7vw, 0.7em);
+  transition: 0.3s;
+}
+#payment-form .allInput input:focus {
+  outline: 0;
+  padding: max(0.9vw, 0.9em) max(0.9vw, 0.9em);
+  color: rgb(0, 0, 0);
+  border: none;
+}
+#payment-form .allInput input:focus::-moz-placeholder {
+  color: transparent;
+}
+#payment-form .allInput input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+#payment-form .allInput input:focus::placeholder {
+  color: transparent;
+}
+#payment-form .form-row {
+  margin: max(1vw, 1em) 0;
+}
+#payment-form button {
+  border: none;
+  width: -webkit-fill-available;
+  border-radius: 7px;
+  font-size: max(1.1vw, 1.1em);
+  padding: max(0.4vw, 0.4em) 0;
+  margin-top: 0 max(2vw, 2em) 0;
+  background-color: #8a2be1;
+  color: white;
+  transition: 0.3s ease;
+}
+#payment-form button:hover {
+  background-color: rgba(137, 43, 225, 0.6784313725);
+}/*# sourceMappingURL=index.css.map */

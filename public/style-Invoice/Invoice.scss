@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+
+@import "./layout/Invoice";
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: .2rem;
+        height: .4rem;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        cursor: pointer;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #ffffff57;
+        border-radius: 1%;
+        transition: .3s;
+        &:hover {
+            background: #ffffff2f;
+        }
+    }
+}

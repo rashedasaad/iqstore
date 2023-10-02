@@ -1,0 +1,523 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.selector_config_3, .delete_typeselector {
+  transition: 0.3s;
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: max(1vw, 1em) max(2vw, 2em);
+  background: #36224A;
+  border-radius: max(1vw, 1em);
+  box-shadow: 0 max(-0.4vw, -0.4em) max(3vw, 3em) max(-1.2vw, -1.2em) #000;
+  padding: max(3vw, 3em);
+  padding-top: max(1vw, 1em);
+  display: none;
+  scale: 0;
+}
+.selector_config_3 p, .delete_typeselector p {
+  text-align: center;
+  font-size: max(2vw, 2em);
+  margin-bottom: max(1vw, 1em);
+}
+.selector_config_3 div, .delete_typeselector div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: max(1vw, 1em);
+}
+.selector_config_3 div select, .delete_typeselector div select {
+  display: block;
+  outline: none;
+  border: none;
+  font-size: max(1vw, 1em);
+  padding: max(0.5vw, 0.5em);
+  border-radius: max(0.5vw, 0.5em);
+}
+
+.selector_config_1 {
+  transition: 0.3s;
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: max(1vw, 1em) max(2vw, 2em);
+  background: #36224A;
+  border-radius: max(1vw, 1em);
+  box-shadow: 0 max(-0.4vw, -0.4em) max(3vw, 3em) max(-1.2vw, -1.2em) #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: max(3vw, 3em);
+  display: none;
+  scale: 0;
+}
+.selector_config_1 .deleteOption {
+  background: #CA5252;
+}
+.selector_config_1 .deleteOption:hover {
+  background: #FFF;
+  color: #CA5252;
+}
+.selector_config_1 p {
+  margin: max(1vw, 1em) 0;
+  font-size: max(3vw, 3em);
+}
+.selector_config_1 button {
+  border-radius: max(0.5vw, 0.5em);
+  padding: max(0.5vw, 0.5em);
+  outline: none;
+  border: none;
+  background: #25c97d;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #FFF;
+  font-size: max(3vw, 3em);
+}
+.selector_config_1 button:hover {
+  color: #25c97d;
+  background: #FFF;
+}
+
+.delete_product {
+  padding-bottom: max(1vw, 1em);
+}
+.delete_product form input[type=submit] {
+  background: #CA5252;
+}
+.delete_product form input[type=submit]:hover {
+  color: #CA5252;
+  background: #FFF;
+}
+
+.backButton {
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  margin: max(1vw, 1em);
+  background: #25c97d;
+  color: #FFF;
+  padding: max(1vw, 1em);
+  border-radius: max(1vw, 1em);
+  font-size: max(2vw, 2em);
+  box-shadow: 0 max(-0.4vw, -0.4em) max(3vw, 3em) max(-1.2vw, -1.2em) #000;
+}
+
+.updatePtoduct {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: max(1vw, 1em) max(2vw, 2em);
+  display: none;
+  border-radius: max(1vw, 1em);
+  box-shadow: 0 max(-0.4vw, -0.4em) max(3vw, 3em) max(-1.2vw, -1.2em) #000;
+}
+.updatePtoduct form .flexPlace {
+  gap: max(1vw, 1em);
+  display: flex;
+}
+.updatePtoduct form .flexPlace .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.updatePtoduct form .flexPlace .inputs h1 {
+  text-shadow: max(-0.7vw, -0.7em) max(0.3vw, 0.3em) max(-1.2vw, -1.2em) rgb(0, 0, 0);
+  font-size: max(1.5vw, 1.5em);
+}
+.updatePtoduct form .flexPlace .inputs input, .updatePtoduct form .flexPlace .inputs select {
+  border: none;
+  outline: none;
+  margin-top: max(1vw, 1em);
+  font-size: max(1vw, 1em);
+  display: block;
+  box-sizing: border-box;
+  padding: max(0.2vw, 0.2em) max(0.5vw, 0.5em);
+  border-radius: max(0.2vw, 0.2em);
+}
+.updatePtoduct form .flexPlace .imageMsnge {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: max(7vw, 7em);
+}
+.updatePtoduct form .flexPlace .imageMsnge label {
+  padding: max(0.2vw, 0.2em) max(0.2vw, 0.2em);
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: max(1vw, 1em);
+  cursor: pointer;
+  font-weight: 500;
+  background: #4A71D8;
+  color: #FFF;
+  display: block;
+  font-size: max(0.9vw, 0.9em);
+}
+.updatePtoduct form .flexPlace .imageMsnge .image {
+  width: max(7vw, 7em);
+  height: max(7vw, 7em);
+}
+.updatePtoduct form .flexPlace .imageMsnge .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.updatePtoduct form .flexButtons {
+  padding-top: max(3vw, 3em);
+  gap: max(0.5vw, 0.5em);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+}
+.updatePtoduct form .flexButtons div:hover {
+  background: #FFF;
+  color: #CA5252;
+}
+.updatePtoduct form .flexButtons input[type=submit]:hover {
+  background: #FFF;
+  color: #25c97d;
+}
+.updatePtoduct form .flexButtons div {
+  transition: 0.3s;
+  padding: max(0.3vw, 0.3em) max(0.4vw, 0.4em);
+  font-size: max(1vw, 1em);
+  color: #FFF;
+  background: #CA5252;
+  border-radius: max(0.2vw, 0.2em);
+  cursor: pointer;
+}
+.updatePtoduct form .flexButtons input[type=submit] {
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: max(0.2vw, 0.2em);
+  padding: max(0.3vw, 0.3em);
+  font-size: max(1vw, 1em);
+  color: #FFF;
+  outline: none;
+  border: none;
+  background: #25c97d;
+}
+
+.cards {
+  width: 100%;
+  height: max(31vw, 31em);
+  box-shadow: 0 max(-0.4vw, -0.4em) max(3vw, 3em) max(-1.2vw, -1.2em) #000;
+  box-sizing: border-box;
+  border-radius: max(2vw, 2em);
+  margin-bottom: max(1vw, 1em);
+  display: flex;
+}
+.cards .types {
+  background: #CA5252;
+  height: 100%;
+  width: 10%;
+  border-top-left-radius: max(2vw, 2em);
+  border-bottom-left-radius: max(2vw, 2em);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: max(2vw, 2em);
+  padding-bottom: max(2vw, 2em);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: max(1vw, 1em);
+  padding-right: 0;
+}
+.cards .types .active {
+  background: #36224A;
+}
+.cards .types div {
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 0;
+  background: #FFF;
+  width: 100%;
+  text-align: center;
+  padding: max(0.3vw, 0.3em) 0;
+  color: #CA5252;
+  font-size: max(1.3vw, 1.3em);
+}
+.cards .products {
+  position: relative;
+  border-radius: max(2vw, 2em);
+  width: 90%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  padding: max(2vw, 2em);
+  padding-top: max(7vw, 7em);
+  display: flex;
+  align-items: flex-start;
+  gap: max(3vw, 3em);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards .products .arrows {
+  background: #251C31;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  padding: max(1vw, 1em) 0;
+  top: 0;
+  display: flex;
+  z-index: 1;
+  border-radius: 0;
+}
+.cards .products .arrows .allArraows {
+  font-size: max(0.7vw, 0.7em);
+  padding: 0 max(0.5vw, 0.5em);
+  padding-bottom: 0;
+  padding-top: max(0.2vw, 0.2em);
+  background: #CA5252;
+  cursor: pointer;
+}
+.cards .products .arrows .numbers {
+  align-items: center;
+  justify-content: center;
+  gap: max(1vw, 1em);
+  padding: 0 max(0.5vw, 0.5em);
+  display: flex;
+}
+.cards .products .arrows .numbers .number {
+  font-size: max(0.7vw, 0.7em);
+  padding: 0 max(0.5vw, 0.5em);
+  background: #CA5252;
+  cursor: pointer;
+}
+.cards .products .arrows .numbers .points {
+  color: #CA5252;
+  font-size: max(1vw, 1em);
+}
+.cards .products .product:hover {
+  background-color: #25c97d;
+}
+.cards .products .product:hover span {
+  color: #36224A;
+}
+.cards .products .product {
+  transition: 0.3s;
+  cursor: pointer;
+  padding: max(1vw, 1em);
+  padding-top: 0;
+  border-radius: max(1vw, 1em);
+  background: #36224A;
+  padding-left: max(0.3vw, 0.3em);
+  width: max(12vw, 12em);
+  position: relative;
+  padding-bottom: max(1vw, 1em);
+  padding-top: max(5vw, 5em);
+}
+.cards .products .product img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: max(1vw, 1em);
+  height: max(7vw, 7em);
+  width: max(7vw, 7em);
+  position: absolute;
+  left: 50%;
+  top: -20%;
+  translate: -50%;
+  margin: auto;
+  display: block;
+}
+.cards .products .product p {
+  font-weight: 600;
+  width: 100%;
+  font-size: max(1.5vw, 1.5em);
+  padding: max(0.1vw, 0.1em) 0;
+}
+.cards .products .product p span {
+  font-weight: 400;
+  font-size: max(0.8vw, 0.8em);
+  color: #7A7181;
+}
+.cards .products .product p .type {
+  text-transform: capitalize;
+}
+
+.delete_type {
+  padding: max(1vw, 1em);
+}
+.delete_type form input[type=submit] {
+  background: #CA5252;
+}
+
+.addProducts {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 max(1vw, 1em);
+  padding-right: max(2vw, 2em);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: max(13.5vw, 13.5em);
+  border-radius: max(1vw, 1em);
+  box-shadow: 0 max(-0.4vw, -0.4em) max(3vw, 3em) max(-1.2vw, -1.2em) #000;
+}
+.addProducts form {
+  box-sizing: border-box;
+  padding: max(2vw, 2em) max(1vw, 1em);
+  gap: max(1vw, 1em);
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  flex-direction: column;
+}
+.addProducts form input {
+  border-radius: max(0.5vw, 0.5em);
+  font-size: max(1vq, 1em);
+  outline: none;
+  border: none;
+}
+.addProducts form input[type=file] {
+  display: none;
+}
+.addProducts form input[type=text], .addProducts form input[type=number] {
+  padding: max(0.3vw, 0.3em) max(1.4vw, 1.4em);
+  font-size: max(0.8vw, 0.8em);
+}
+.addProducts form .select {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.addProducts form .select select {
+  width: 100%;
+  font-size: max(1vw, 1em);
+  outline: none;
+  border: none;
+}
+.addProducts form .select p {
+  padding: max(0.1vw, 0.1em) max(1vw, 1em);
+  background: #4A71D8;
+  color: #FFF;
+  font-size: max(1vw, 1em);
+  cursor: pointer;
+}
+.addProducts form .fileImporter {
+  font-size: max(1vw, 1em);
+  box-sizing: border-box;
+  padding: max(0.4vw, 0.4em) max(1vw, 1em);
+  background: #4A71D8;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.addProducts form input[type=submit] {
+  box-sizing: border-box;
+  padding: max(0.4vw, 0.4em) max(1vw, 1em);
+  background: #25c97d;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  color: #FFF;
+  font-size: max(0.8vw, 0.8em);
+  font-weight: 700;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+.addProducts .image {
+  width: max(10vw, 10em);
+  height: max(10vw, 10em);
+  background: #36224A;
+  border-radius: max(0.5vw, 0.5em);
+}
+.addProducts .image img {
+  outline: none;
+  border-radius: max(0.5vw, 0.5em);
+  border: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+@media (max-width: 1500px) {
+  .cards {
+    height: max(27vw, 27em);
+  }
+}
+@media (max-width: 1050px) {
+  .cards {
+    height: max(17vw, 17em);
+  }
+  .addProducts {
+    margin-top: max(2vw, 2em);
+  }
+  .cards .types {
+    display: none;
+  }
+  .cards .products {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 750px) {
+  .backButton {
+    bottom: 0;
+    right: unset;
+    left: 50%;
+    translate: -50% 0;
+    top: unset;
+  }
+  .updatePtoduct {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .updatePtoduct input {
+    width: 90%;
+  }
+  .updatePtoduct select {
+    width: 90%;
+  }
+  .updatePtoduct .image {
+    width: max(5vw, 5em);
+    height: max(5vw, 5em);
+  }
+  .updatePtoduct .image img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .cards .types {
+    display: none;
+  }
+  .cards .products {
+    width: 100%;
+    justify-content: center;
+  }
+  .addProducts {
+    flex-direction: column-reverse;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-top: max(1vw, 1em);
+  }
+  .addProducts form {
+    padding-top: max(1vw, 1em);
+  }
+}/*# sourceMappingURL=2_.css.map */

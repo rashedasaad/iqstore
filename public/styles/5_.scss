@@ -1,0 +1,152 @@
+.allUsers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    height: 50vh;
+    padding: max(1vw, 1em) 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: max(1vw, 1em);
+    .single_user{
+        box-shadow: 0 max(-0.4vw, -0.4em) max(1vw, 1em) max(-0.7vw, -0.7em) #000;
+        padding: max(1vw, 1em);
+        font-size: max(2vw, 2em);
+        border-radius: max(1vw, 1em);
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            background: #FFF;
+            color: #492967;
+        }
+    }
+}
+.delete_user{
+    padding-bottom: max(1vw, 1em);
+    form{
+        
+        input[type=submit]{
+            background: #CA5252;
+        }
+    }
+}
+.create_new_user_form, .update_user_form{
+    background-color: #492967;
+    scale: 0;
+    transition: 0.3s;
+    z-index: 4;
+    box-shadow: 0 max(-0.4vw, -0.4em) max(1vw, 1em) max(-0.7vw, -0.7em) #000;
+    padding: max(1vw, 1em);
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: max(1vw, 1em);
+    h1{
+        font-size: max(1.5vw, 1.5em);
+        text-align: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        input, .showPassword, .showPassword_update{
+            outline:none;
+            border:none;
+            margin: max(0.5vw, 0.5em);
+            padding: max(0.5vw, 0.5em);
+            border-radius: max(0.5vw, 0.5em);
+        }
+        .username{
+            font-size: max(1vw, 1em);
+            
+        }
+        .password{
+            font-size: max(0.8vw, 0.8em);
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .showPassword:hover, input[type=submit]:hover, .showPassword_update:hover{
+                background: #FFF;
+                color: #000;
+            }
+            .showPassword, .showPassword_update{
+                transition: 0.3s;
+                cursor: pointer;
+                user-select: none;
+                background: #CA5252;
+                font-size: max(0.8vw, 0.8em);
+            }
+            input[type=submit]{
+                font-size: max(0.8vw, 0.8em);
+                transition: 0.3s;
+                cursor: pointer;
+                background: #25c97d;
+                color: #FFF;
+            }
+        }
+    }
+}
+.userManage{
+    box-sizing: border-box;
+    font-size: max(1vw, 1em);
+    display: none;
+    p{
+        font-weight: bold;
+        margin: max(1vw, 1em) 0;
+        span{
+            font-weight: 500;
+            color: #7A7181;
+        }
+    }
+    h2{
+        font-size: max(1.5vw, 1.5em);
+    }
+    .update{
+        background: #25c97d;
+    }
+    .delete{
+        background: #CA5252;
+    }
+    button{
+        border: none;
+        outline: none;
+        color: #FFF;
+        display: block;
+        cursor: pointer;
+        padding: max(0.5vw, 0.5em);
+        margin: max(0.5vw, 0.5em) 0;
+        font-size: max(1vw, 1em);
+        border-radius: max(0.5vw, 0.5em);
+        transition: 0.3s;
+        &:hover{
+            background: #FFF;
+            color: #492967;
+        }
+    }
+}
+.createUser{
+    box-shadow: 0 max(-0.4vw, -0.4em) max(1vw, 1em) max(-0.7vw, -0.7em) #000;
+    padding: max(1vw, 1em);
+    font-size: max(1vw, 1em);
+    border-radius: max(1vw, 1em);
+    position: fixed;
+    cursor: pointer;
+    transition: 0.3s;
+    right: 0;
+    bottom: 0;
+    background: #25c97d;
+    &:hover{
+        background: #FFF;
+        color: #25c97d;
+    }
+    color: #FFF;
+    border: none;
+    outline: none;
+    margin: max(1vw, 1em);
+}

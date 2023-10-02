@@ -1,0 +1,59 @@
+.allInvoice {
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 0 0 max(1vw, 1em) max(1vw, 1em);
+    .continer {
+        
+        .logo {
+            width: 100%;
+            text-align: center;
+            background-color: #4A2D67;
+            padding: max(2vw,2em) 0;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            img {
+                width: 300px;
+            }
+            h1 {
+                text-align: center;
+                color: white;
+                letter-spacing: 2px;
+                font-size: max(2vw,2em);
+            }
+        }
+        .invoice {
+            width: 100%;
+            text-align: center;
+            background-color: #36224A;
+            padding: max(2vw, 2em);
+            border-radius: 0 0 10px 10px;
+            h1 {
+                text-align: center;
+                color: white;
+                font-size: max(2vw, 2em);
+                background-color: #7C5E99;
+                width: fit-content;
+                margin: 0 auto;
+                padding: 5px max(0.4vw, 0.4em);
+                border-radius: 10px;
+                box-shadow: 0 0 14px 1px black inset;
+            }
+            p {
+                color: white;
+                background-color: #7C5E99;
+                width: 100%;
+                padding: max(1vw, 1em);
+                margin: max(1vw, 1em) 0 0;
+                text-align: left;
+                border-radius: max(0.3vw, 0.3em);
+                box-shadow: 0 0 54px 15px #36224a inset;
+                border: 2px solid #4a2d67;
+                
+                span {
+                    color: rgb(232, 232, 232);
+                    display: block;
+                }
+            }
+        }
+    }
+}
